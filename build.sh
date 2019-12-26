@@ -10,7 +10,8 @@ docker run --rm -it -v ${PWD}:/docs squidfunk/mkdocs-material build -d docs
 
 for tag in ${tags[@]}
 do
-    git checkout refs/tags/$tag
+    git clean -df . > /dev/null 2>&1
+    git checkout refs/tags/$tag > /dev/null 2>&1
     docker run --rm -it -v ${PWD}:/docs squidfunk/mkdocs-material build -d docs/$tag
 done
 
