@@ -1,0 +1,46 @@
+site_name: adstir
+
+docs_dir: markdown
+# ページとmarkdownファイルを紐づける設定
+nav:
+  - ガイド:
+    - Index: index.md
+    - Code: code.md
+    - Table: table.md
+    - バージョン:
+      - 1.0.0: /android-doc-test/1.0.0
+  - リファレンス:
+    - インデックス: index2.md
+
+
+
+# ページのデザイン設定
+theme:
+  name: 'material'
+  language: 'ja'
+  palette:
+    primary: 'indigo'
+    accent: 'indigo'
+  font:
+    text: 'Roboto'
+    code: 'Roboto Mono'
+  feature:
+    tabs: true
+
+# 検索機能の設定
+extra:
+  search:
+    language: 'jp'
+
+# 拡張機能の設定
+markdown_extensions:
+  - admonition
+  - footnotes
+  - codehilite
+  - meta
+  - toc:
+      permalink: true
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.superfences
+  - pymdownx.details
