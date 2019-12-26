@@ -13,7 +13,7 @@ nav:
         - B: infoB.md
         - C: infoC.md
     - バージョン:
-      - 1.1.0: /android-doc-test/1.1.0
+      - 2.0.0: /android-doc-test/2.0.0
       - 1.0.0: /android-doc-test/1.0.0
   - リファレンス:
     - インデックス: index2.md
